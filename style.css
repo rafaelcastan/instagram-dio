@@ -17,6 +17,12 @@ body {
     justify-content: center;
 }
 
+.model-button{
+   position: absolute;
+   right:15%;
+   top:5%;
+}
+
 .instagram-wrapper {
     display: flex;
     align-items: center;
@@ -36,6 +42,17 @@ body {
     height: 50rem;
 }
 
+.instagram-phone-2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+}
+
+.instagram-phone-2 img {
+    height: 46rem;
+}
+
 .instagram-continue {
     display: flex;
     align-items: center; /* horizontal */
@@ -43,6 +60,15 @@ body {
     flex-direction: column;
     width: 50%;
     min-height: 34rem;
+}
+
+.instagram-continue-2 {
+    display: flex;
+    align-items: center; /* horizontal */
+    justify-content: space-around; /* vertical */
+    flex-direction: column;
+    width: 50%;
+    min-height: 15rem;
 }
 
 .group {
@@ -60,8 +86,24 @@ body {
     min-height: 19rem;
 }
 
+.group-2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    background-color: #ffffff;
+    width: 83%;
+    padding: 1.3rem 0;
+    border: 1px solid lightgray;
+}
+
 .instagram-logo {
     height: 3rem;
+}
+
+.instagram-logo-2 {
+    height: 3.5rem;
+    margin-top: 25px;
 }
 
 .profile-photo {
@@ -76,10 +118,35 @@ body {
     height: 6rem;
 }
 
+.profile-photo-2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.profile-photo-2 img {
+    height: 8rem;
+}
+
+
+
 .instagram-login {
     background-color: #0095f6;
     color: #ffffff;
     padding: 8px;
+    border-radius: 4px;
+}
+
+.instagram-login-2 {
+    background-color: #0095f6;
+    color: #ffffff;
+    padding: 8px;
+    padding-right: 20px;
+    padding-left: 20px;
     border-radius: 4px;
 }
 
@@ -90,6 +157,11 @@ body {
 
 .not-account {
     color: rgb(160, 160, 160);
+}
+
+.not-account-2 {
+    color: rgb(0, 0, 0);
+    padding-top: 30px;
 }
 
 .link-blue {
@@ -132,7 +204,7 @@ body {
 
 @media (max-width: 1024px) {
     .instagram-wrapper {
-        width: 90%;
+        width: 95%;
     }
 }
 
@@ -149,11 +221,27 @@ body {
         display: none;
     }
 
+    .instagram-phone-2 {
+        display: none;
+    }
+
     .instagram-continue {
+        width: 100%;
+    }
+
+    .instagram-continue-2 {
         width: 100%;
     }
     
     .group {
         border: 1px solid transparent;
+    }
+
+    .group-2 {
+        border: 1px solid transparent;
+    }
+
+    .model-button{
+        display: none;
     }
 }
